@@ -1,0 +1,28 @@
+
+
+body{
+    background-color: #aaa;
+}
+
+table{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+table tr:last-child{
+    border-bottom: #aaa !important;
+}
+
+th{
+    height: 30px;
+}
+
+#jawaban{
+    height: 40px;
+}
+
+.container{
+    text-align: center;
+    margin: 20px auto;
+    width: 600px;
+}
