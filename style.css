@@ -24,5 +24,6 @@ th{
 .container{
     text-align: center;
     margin: 20px auto;
-    width: 600px;
+    max-width: 600px;
+    width: 80vw;
 }
