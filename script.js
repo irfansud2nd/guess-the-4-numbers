@@ -106,3 +106,15 @@ function showModal(pesan) {
   modal.show();
   document.getElementById("modal-pesan").innerHTML = `${pesan}`;
 }
+
+function sendEmail() {
+  Email.send({
+    SecureToken: "d823131f-7241-46d5-b7cb-e2e53f637ddf",
+    To: "irfansud2nd@gmail.com",
+    From: "irfansud2nd@gmail.com",
+    Subject: "Guess the 4 numbers",
+    Body: ` Nama : ${document.getElementById("nama").value} <br> 
+    Email : ${document.getElementById("email").value} <br> 
+    Pesan : ${document.getElementById("pesan").value}`,
+  }).then((message) => alert("Pesan berhasil dikirimkan"));
+}
