@@ -86,3 +86,14 @@ function addRow(jawaban, posisiBenar, angkaBenar) {
   newCell = newRow.insertCell();
   newCell.innerHTML = `Posisi Benar ${posisiBenar} <br> Angka Benar ${angkaBenar}`;
 }
+
+function menyerah() {
+  document.getElementById(
+    "modal-body-menyerah"
+  ).innerHTML = `Jawabannya adalah <strong>${kunciJawaban.join("")}</strong>`;
+  document.getElementById("modal-button-menyerah").innerHTML =
+    '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="window.location.reload();">Close</button>';
+  document
+    .getElementById("close-menyerah")
+    .setAttribute("onclick", "window.location.reload();");
+}
