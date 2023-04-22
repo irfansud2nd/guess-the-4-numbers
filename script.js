@@ -17,12 +17,12 @@ submit.addEventListener("click", () => {
   input.value = "";
   let jawaban = [];
   if (jawabanStr.length < 4) {
-    alert("Anda memasukan kurang dari 4 karakter");
+    showModal("Anda memasukan kurang dari 4 karakter");
     throw new Error("Error");
   }
   jawabanStr.map((angka) => {
     if (isNaN(Number(angka))) {
-      alert("Anda memasukan selain angka!");
+      showModal("Anda memasukan selain angka!");
       throw new Error("Error");
     }
     jawaban.push(Number(angka));
@@ -96,4 +96,13 @@ function menyerah() {
   document
     .getElementById("close-menyerah")
     .setAttribute("onclick", "window.location.reload();");
+}
+
+function showModal(pesan) {
+  let modal = new bootstrap.Modal(
+    document.getElementById("serbagunaModal"),
+    {}
+  );
+  modal.show();
+  document.getElementById("modal-pesan").innerHTML = `${pesan}`;
 }
