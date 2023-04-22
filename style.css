@@ -2,6 +2,7 @@
 
 body{
     background-color: #aaa;
+    min-height: 100vh;
 }
 
 table{
@@ -30,4 +31,8 @@ th{
 
 .modal-body ol li {
     text-align: left;
+}
+
+footer{
+    border-top: 2px solid #ccc;
 }
