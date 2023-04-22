@@ -23,7 +23,11 @@ th{
 
 .container{
     text-align: center;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     max-width: 600px;
     width: 80vw;
+}
+
+.modal-body ul li {
+    text-align: left;
 }
